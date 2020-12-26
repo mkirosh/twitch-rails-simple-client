@@ -1,0 +1,217 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitch.tv/helix/search/channels?client_id=t938bux1oi880mo9q165wivwa93ped&first=10&query=fabric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer y6rd905nfl4tsygs3s3vh3n6gavhej
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '979'
+      content-type:
+      - application/json; charset=utf-8
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - '0'
+      pragma:
+      - no-cache
+      ratelimit-limit:
+      - '800'
+      ratelimit-remaining:
+      - '799'
+      ratelimit-reset:
+      - '1609014034'
+      timing-allow-origin:
+      - https://www.twitch.tv
+      twitch-trace-id:
+      - 0a51f0cfd6a7152198b008e685cb26d9
+      x-ctxlog-logid:
+      - 1-5fe79b11-120358362d8d9173540cbb83
+      date:
+      - Sat, 26 Dec 2020 20:20:33 GMT
+      x-served-by:
+      - cache-sea4476-SEA, cache-bog6424-BOG
+      x-cache:
+      - MISS, MISS
+      x-cache-hits:
+      - 0, 0
+      x-timer:
+      - S1609014034.719935,VS0,VS0,VE206
+      vary:
+      - Accept-Encoding
+      strict-transport-security:
+      - max-age=300
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJicm9hZGNhc3Rlcl9sYW5ndWFnZSI6ImVuIiwiZGlzcGxheV9uYW1lIjoiZmFicmljaW9fbGF0aWZpMTAiLCJnYW1lX2lkIjoiMzMyMTQiLCJpZCI6IjU0MTA4ODc2OSIsImlzX2xpdmUiOmZhbHNlLCJ0YWdfaWRzIjpbXSwidGh1bWJuYWlsX3VybCI6Imh0dHBzOi8vc3RhdGljLWNkbi5qdHZudy5uZXQvanR2X3VzZXJfcGljdHVyZXMvZjg4NjU4MTUtZGM5MS00OTM2LWJiYWUtMTc5MDRjYWExYWM5LXByb2ZpbGVfaW1hZ2UtMzAweDMwMC5wbmciLCJ0aXRsZSI6Ikp1Z2FuZG8gYXJlbmEgZnQgdGluY2hvICIsInN0YXJ0ZWRfYXQiOiIifSx7ImJyb2FkY2FzdGVyX2xhbmd1YWdlIjoiZnIiLCJkaXNwbGF5X25hbWUiOiJmYWJyaWNlX2dhcmNvbiIsImdhbWVfaWQiOiIzMTc1MCIsImlkIjoiMTIwMTEwMDk1IiwiaXNfbGl2ZSI6ZmFsc2UsInRhZ19pZHMiOltdLCJ0aHVtYm5haWxfdXJsIjoiaHR0cHM6Ly9zdGF0aWMtY2RuLmp0dm53Lm5ldC9qdHZfdXNlcl9waWN0dXJlcy8xNjVhZWM3MC1jZDg0LTRjYTAtYmZlNC1hYTk5ZTQzZGFkYWMtcHJvZmlsZV9pbWFnZS0zMDB4MzAwLnBuZyIsInRpdGxlIjoi8J+UtCBbRlJdIERlY291dmVydGUgZHUgbm91dmVhdSBUcmFpbGVyIGRlIHRpdmFsaWEgVjMg8J+UtCIsInN0YXJ0ZWRfYXQiOiIifSx7ImJyb2FkY2FzdGVyX2xhbmd1YWdlIjoicHQiLCJkaXNwbGF5X25hbWUiOiJmYWJyaWNpb2JyYWdhNyIsImdhbWVfaWQiOiI1MTQ4NTgiLCJpZCI6IjIyOTY2OTI0OCIsImlzX2xpdmUiOmZhbHNlLCJ0YWdfaWRzIjpbXSwidGh1bWJuYWlsX3VybCI6Imh0dHBzOi8vc3RhdGljLWNkbi5qdHZudy5uZXQvanR2X3VzZXJfcGljdHVyZXMvODdiMTViYTMtYmE2NC00OGU5LTlmYzQtZGRhOWY2Y2Q3ZDc4LXByb2ZpbGVfaW1hZ2UtMzAweDMwMC5wbmciLCJ0aXRsZSI6IiNXSUxEUklGVCAjRVVST1BBICNCUkFTSUxFSVJPICNMT0wgI1RvcDMiLCJzdGFydGVkX2F0IjoiIn0seyJicm9hZGNhc3Rlcl9sYW5ndWFnZSI6Im5sIiwiZGlzcGxheV9uYW1lIjoiZmFicmljZWNvcm5lbGlzIiwiZ2FtZV9pZCI6IjE5NTU0IiwiaWQiOiI2NzIyMzE4MCIsImlzX2xpdmUiOmZhbHNlLCJ0YWdfaWRzIjpbXSwidGh1bWJuYWlsX3VybCI6Imh0dHBzOi8vc3RhdGljLWNkbi5qdHZudy5uZXQvanR2X3VzZXJfcGljdHVyZXMvNjFjYjZmZjktNzA1YS00ZTM5LTgxYzktMGI0N2E0YTlhN2MzLXByb2ZpbGVfaW1hZ2UtMzAweDMwMC5wbmciLCJ0aXRsZSI6IjZIIEltb2xhIEBVUkFOTyBlU3BvcnRzIiwic3RhcnRlZF9hdCI6IiJ9LHsiYnJvYWRjYXN0ZXJfbGFuZ3VhZ2UiOiJlbiIsImRpc3BsYXlfbmFtZSI6ImZhYnJpY2F0ZWRsaWZlIiwiZ2FtZV9pZCI6IjUxMjM3MSIsImlkIjoiODI0OTIxODQiLCJpc19saXZlIjpmYWxzZSwidGFnX2lkcyI6W10sInRodW1ibmFpbF91cmwiOiJodHRwczovL3N0YXRpYy1jZG4uanR2bncubmV0L2p0dl91c2VyX3BpY3R1cmVzL2ZhYnJpY2F0ZWRsaWZlLXByb2ZpbGVfaW1hZ2UtMGUzNDk1MTQxNzMyMjI2MC0zMDB4MzAwLmpwZWciLCJ0aXRsZSI6InJvYWQgdG8gdGhlIHN1cGVyYm93bCIsInN0YXJ0ZWRfYXQiOiIifSx7ImJyb2FkY2FzdGVyX2xhbmd1YWdlIjoiZXMiLCJkaXNwbGF5X25hbWUiOiJmYWJyaWNpb2NhYmV6YWRldHJhY3RvciIsImdhbWVfaWQiOiI0OTc0OTciLCJpZCI6IjIyODUwOTEyMCIsImlzX2xpdmUiOmZhbHNlLCJ0YWdfaWRzIjpbXSwidGh1bWJuYWlsX3VybCI6Imh0dHBzOi8vc3RhdGljLWNkbi5qdHZudy5uZXQvanR2X3VzZXJfcGljdHVyZXMvMmUxYzk3MjUtYTJhMC00OTE2LWIxMDctZWE3MDE5ZmYzMmQzLXByb2ZpbGVfaW1hZ2UtMzAweDMwMC5wbmciLCJ0aXRsZSI6IlNhYWFwZSEiLCJzdGFydGVkX2F0IjoiIn0seyJicm9hZGNhc3Rlcl9sYW5ndWFnZSI6IiIsImRpc3BsYXlfbmFtZSI6ImZhYnJpY2lvX3NhbHZhIiwiZ2FtZV9pZCI6IjAiLCJpZCI6IjYwNTg5OTY5MiIsImlzX2xpdmUiOmZhbHNlLCJ0YWdfaWRzIjpbXSwidGh1bWJuYWlsX3VybCI6Imh0dHBzOi8vc3RhdGljLWNkbi5qdHZudy5uZXQvdXNlci1kZWZhdWx0LXBpY3R1cmVzLXV2L2RiZGM5MTk4LWRlZjgtMTFlOS04NjgxLTc4NGY0MzgyMmU4MC1wcm9maWxlX2ltYWdlLTMwMHgzMDAucG5nIiwidGl0bGUiOiIiLCJzdGFydGVkX2F0IjoiIn0seyJicm9hZGNhc3Rlcl9sYW5ndWFnZSI6InB0IiwiZGlzcGxheV9uYW1lIjoiZmFicmljMW4iLCJnYW1lX2lkIjoiNTA5NjU4IiwiaWQiOiI0NDM4NjA1NDgiLCJpc19saXZlIjpmYWxzZSwidGFnX2lkcyI6W10sInRodW1ibmFpbF91cmwiOiJodHRwczovL3N0YXRpYy1jZG4uanR2bncubmV0L2p0dl91c2VyX3BpY3R1cmVzLzhjNTIzNDljLWJiMDAtNGE3NS1hMzRjLTQ3NjkxMjJhYTZhMC1wcm9maWxlX2ltYWdlLTMwMHgzMDAucG5nIiwidGl0bGUiOiIoKzE4KSAgIEZFTElaIE5BVEFMICAgICAhc29ydGVpb3MiLCJzdGFydGVkX2F0IjoiIn0seyJicm9hZGNhc3Rlcl9sYW5ndWFnZSI6InB0IiwiZGlzcGxheV9uYW1lIjoiZmFicmljaW9rYXoiLCJnYW1lX2lkIjoiMjcyODQiLCJpZCI6IjEzNTUxNzY1NyIsImlzX2xpdmUiOmZhbHNlLCJ0YWdfaWRzIjpbXSwidGh1bWJuYWlsX3VybCI6Imh0dHBzOi8vc3RhdGljLWNkbi5qdHZudy5uZXQvanR2X3VzZXJfcGljdHVyZXMvMzM3MjMzYjItYmNjMC00NzQ4LTlkZTktZTIwODhjM2IzZTFjLXByb2ZpbGVfaW1hZ2UtMzAweDMwMC5wbmciLCJ0aXRsZSI6IkpvZ29zIGRhIEdhbGVyYSAhc3ViICFpbmNlbnQgI1NITlVVVkVNIiwic3RhcnRlZF9hdCI6IiJ9LHsiYnJvYWRjYXN0ZXJfbGFuZ3VhZ2UiOiJwdCIsImRpc3BsYXlfbmFtZSI6ImZhYnJpY2lvc2R3IiwiZ2FtZV9pZCI6IjUwOTY1OCIsImlkIjoiMTI3NTcyMDE1IiwiaXNfbGl2ZSI6ZmFsc2UsInRhZ19pZHMiOltdLCJ0aHVtYm5haWxfdXJsIjoiaHR0cHM6Ly9zdGF0aWMtY2RuLmp0dm53Lm5ldC9qdHZfdXNlcl9waWN0dXJlcy9mNjA4NmFkMC0xZWIxLTQzNmItYWZmOC0yNzFlYmRlYzY1OTMtcHJvZmlsZV9pbWFnZS0zMDB4MzAwLnBuZyIsInRpdGxlIjoiRVNQRUNJQUwgREUgTkFUQUwhISEiLCJzdGFydGVkX2F0IjoiIn1dLCJwYWdpbmF0aW9uIjp7ImN1cnNvciI6Ik1UQT0ifX0=
+  recorded_at: Sat, 26 Dec 2020 20:20:33 GMT
+- request:
+    method: get
+    uri: https://id.twitch.tv/oauth2/validate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer tv5fivadv34y0bucticng5jw0fyejy
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 26 Dec 2020 23:07:38 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '145'
+      connection:
+      - keep-alive
+      server:
+      - nginx/1.14.1
+      access-control-allow-origin:
+      - "*"
+      x-ctxlog-logid:
+      - 1-5fe7c23a-7f0c1d4e01475d0a26037867
+    body:
+      encoding: UTF-8
+      string: '{"client_id":"t938bux1oi880mo9q165wivwa93ped","login":"katzesaurus","scopes":["chat:edit","chat:read"],"user_id":"571793022","expires_in":10313}
+
+        '
+  recorded_at: Sat, 26 Dec 2020 23:07:38 GMT
+- request:
+    method: get
+    uri: https://api.twitch.tv/helix/search/channels?client_id=t938bux1oi880mo9q165wivwa93ped&first=10&query=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer tv5fivadv34y0bucticng5jw0fyejy
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '85'
+      content-type:
+      - application/json; charset=utf-8
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - '0'
+      pragma:
+      - no-cache
+      timing-allow-origin:
+      - https://www.twitch.tv
+      twitch-trace-id:
+      - b1d4f0da10243852505f501021a86279
+      x-ctxlog-logid:
+      - 1-5fe7c23a-6c3938991078a52a71012570
+      date:
+      - Sat, 26 Dec 2020 23:07:39 GMT
+      x-served-by:
+      - cache-sea4432-SEA, cache-bog6434-BOG
+      x-cache:
+      - MISS, MISS
+      x-cache-hits:
+      - 0, 0
+      x-timer:
+      - S1609024059.896254,VS0,VS0,VE139
+      vary:
+      - Accept-Encoding
+      strict-transport-security:
+      - max-age=300
+    body:
+      encoding: UTF-8
+      string: '{"error":"Bad Request","status":400,"message":"Missing required parameter
+        \"query\""}'
+  recorded_at: Sat, 26 Dec 2020 23:07:39 GMT
+- request:
+    method: get
+    uri: https://api.twitch.tv/helix/search/channels?first=10&query=fabric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer tv5fivadv34y0bucticng5jw0fyejy
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '69'
+      content-type:
+      - application/json; charset=utf-8
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - '0'
+      pragma:
+      - no-cache
+      timing-allow-origin:
+      - https://www.twitch.tv
+      twitch-trace-id:
+      - 11e2ed6d893f9559980e4fc5a374e455
+      x-ctxlog-logid:
+      - 1-5fed3a0c-6df7acdb4d6852e615ed9e45
+      date:
+      - Thu, 31 Dec 2020 02:40:12 GMT
+      x-served-by:
+      - cache-sea4445-SEA, cache-bog6429-BOG
+      x-cache:
+      - MISS, MISS
+      x-cache-hits:
+      - 0, 0
+      x-timer:
+      - S1609382413.524727,VS0,VS0,VE127
+      vary:
+      - Accept-Encoding
+      strict-transport-security:
+      - max-age=300
+    body:
+      encoding: UTF-8
+      string: '{"error":"Unauthorized","status":401,"message":"Invalid OAuth token"}'
+  recorded_at: Thu, 31 Dec 2020 02:40:12 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://id.twitch.tv/oauth2/token
+    body:
+      encoding: UTF-8
+      string: '{"client_id":"t938bux1oi880mo9q165wivwa93ped","client_secret":"3kijjn2ce39jlr8kfie4jci8o7k6dp","redirect_uri":"http://localhost:3000/sessions/new","refresh_token":"m7a3jwzlpjdqgt54ri9i686datavcspzar4pex9zf537d3m6gy","grant_type":"refresh_token"}'
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer m1p9yk8ezz778evd9h225jjfl8i42r
+      User-Agent:
+      - Faraday v1.2.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 30 Dec 2020 23:39:21 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '194'
+      connection:
+      - keep-alive
+      server:
+      - nginx/1.14.1
+      access-control-allow-origin:
+      - "*"
+      x-ctxlog-logid:
+      - 1-5fed0fa9-4632b2e26fc5fe9d6bb28c73
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"db4xm4bhnw99t9mamv4aqb6y8yy8jq","expires_in":14227,"refresh_token":"m7a3jwzlpjdqgt54ri9i686datavcspzar4pex9zf537d3m6gy","scope":["chat:edit","chat:read"],"token_type":"bearer"}
+
+        '
+  recorded_at: Wed, 30 Dec 2020 23:39:21 GMT
+- request:
+    method: get
+    uri: https://id.twitch.tv/oauth2/validate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer db4xm4bhnw99t9mamv4aqb6y8yy8jq
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 30 Dec 2020 23:39:22 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '145'
+      connection:
+      - keep-alive
+      server:
+      - nginx/1.14.1
+      access-control-allow-origin:
+      - "*"
+      x-ctxlog-logid:
+      - 1-5fed0faa-30f06eea4c907c2c76806f74
+    body:
+      encoding: UTF-8
+      string: '{"client_id":"t938bux1oi880mo9q165wivwa93ped","login":"katzesaurus","scopes":["chat:edit","chat:read"],"user_id":"571793022","expires_in":14226}
+
+        '
+  recorded_at: Wed, 30 Dec 2020 23:39:22 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,20 @@
+<%= form_tag(streams_path, method: :get) do |form| %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>
+<% if @streams.any? %>
+  <table>
+    <th>
+      <td>Name</td>
+      <td>Is live</td>
+      <td></td>
+    </th>
+    <% @streams.each do |stream| %>
+      <tr>
+        <td><%= stream['display_name'] %></td>
+        <td><%= image_tag stream['thumbnail_url'], width: 30 %></td>
+        <td><%= link_to "View", stream_path(id: stream['id']), data: { turbolinks: false }%></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

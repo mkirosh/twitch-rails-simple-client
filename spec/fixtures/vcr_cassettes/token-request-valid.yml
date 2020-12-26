@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://id.twitch.tv/oauth2/token
+    body:
+      encoding: UTF-8
+      string: '{"code":"ti3r80uxxon1yfii1i73a185d2dksx","client_id":"t938bux1oi880mo9q165wivwa93ped","client_secret":"kxuh2weyetvyjfdsds8oxhcyqzq2bl","redirect_uri":"http://localhost:3000/sessions/new","grant_type":"authorization_code"}'
+    headers:
+      User-Agent:
+      - Faraday v1.2.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 26 Dec 2020 16:41:40 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '194'
+      connection:
+      - keep-alive
+      server:
+      - nginx/1.14.1
+      access-control-allow-origin:
+      - "*"
+      x-ctxlog-logid:
+      - 1-5fe767c3-4b1f19d3706e66d46827d0be
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"0urylb79k1qz1ky041n4w4v4g7r3w6","expires_in":13612,"refresh_token":"ouuiy4lw7ia909clw1cp9mnegp39ii53a3lymdvxpwhecrg7ui","scope":["chat:edit","chat:read"],"token_type":"bearer"}
+
+        '
+  recorded_at: Sat, 26 Dec 2020 16:41:40 GMT
+recorded_with: VCR 6.0.0

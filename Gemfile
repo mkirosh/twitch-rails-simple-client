@@ -4,6 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'interactor'
+gem 'faraday'
+gem 'faraday_middleware'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
@@ -30,6 +33,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'vcr'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

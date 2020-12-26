@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitch.tv/helix/users?id=456654928
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer 2lo9w8eadrdk58dxhqz3wbsszayjdh
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection:
+      - keep-alive
+      content-length:
+      - '362'
+      content-type:
+      - application/json; charset=utf-8
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, no-store, must-revalidate, private
+      expires:
+      - '0'
+      pragma:
+      - no-cache
+      ratelimit-limit:
+      - '800'
+      ratelimit-remaining:
+      - '799'
+      ratelimit-reset:
+      - '1609383808'
+      timing-allow-origin:
+      - https://www.twitch.tv
+      twitch-trace-id:
+      - cfb9bfe9e617fcf4386007581669274a
+      x-ctxlog-logid:
+      - 1-5fed3f7f-634992d314f2ee1720a81466
+      date:
+      - Thu, 31 Dec 2020 03:03:28 GMT
+      x-served-by:
+      - cache-sea4439-SEA, cache-bog6435-BOG
+      x-cache:
+      - MISS, MISS
+      x-cache-hits:
+      - 0, 0
+      x-timer:
+      - S1609383808.842061,VS0,VS0,VE165
+      vary:
+      - Accept-Encoding
+      strict-transport-security:
+      - max-age=300
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjQ1NjY1NDkyOCIsImxvZ2luIjoiYWhha2ltaTUiLCJkaXNwbGF5X25hbWUiOiJhaGFraW1pNSIsInR5cGUiOiIiLCJicm9hZGNhc3Rlcl90eXBlIjoicGFydG5lciIsImRlc2NyaXB0aW9uIjoiRGl2ZXJzacOzbiDwn46uIiwicHJvZmlsZV9pbWFnZV91cmwiOiJodHRwczovL3N0YXRpYy1jZG4uanR2bncubmV0L2p0dl91c2VyX3BpY3R1cmVzLzhkY2YxNGY5LThkNjktNDg4NS04MTMzLTA3ZGE3MTlkYjZmYS1wcm9maWxlX2ltYWdlLTMwMHgzMDAucG5nIiwib2ZmbGluZV9pbWFnZV91cmwiOiIiLCJ2aWV3X2NvdW50Ijo2NDg5OCwiY3JlYXRlZF9hdCI6IjIwMTktMDgtMjNUMTY6NTQ6MTIuMjE5MjE0WiJ9XX0=
+  recorded_at: Thu, 31 Dec 2020 03:03:27 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://id.twitch.tv/oauth2/token
+    body:
+      encoding: UTF-8
+      string: '{"client_id":"t938bux1oi880mo9q165wivwa93ped","client_secret":"3kijjn2ce39jlr8kfie4jci8o7k6dp","redirect_uri":"http://localhost:3000/sessions/new","refresh_token":"m7a3jwzlasdft54ri9i686datavcspzar4pex9zf537d3m6gy","grant_type":"refresh_token"}'
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer m1p9yk8ezz778evd9h225jjfl8i42r
+      User-Agent:
+      - Faraday v1.2.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      date:
+      - Wed, 30 Dec 2020 23:50:44 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '49'
+      connection:
+      - keep-alive
+      server:
+      - nginx/1.14.1
+      access-control-allow-origin:
+      - "*"
+      x-ctxlog-logid:
+      - 1-5fed1253-356604b1638a2fbf1ae6fc1d
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"message":"Invalid refresh token"}
+
+        '
+  recorded_at: Wed, 30 Dec 2020 23:50:44 GMT
+recorded_with: VCR 6.0.0

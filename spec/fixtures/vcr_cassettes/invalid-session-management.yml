@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://id.twitch.tv/oauth2/validate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Client-Id:
+      - t938bux1oi880mo9q165wivwa93ped
+      Authorization:
+      - Bearer en4ghuwhipqevl0gs8e84fibnxufwg
+      User-Agent:
+      - Faraday v1.2.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      date:
+      - Wed, 30 Dec 2020 23:16:48 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '48'
+      connection:
+      - keep-alive
+      server:
+      - nginx/1.14.1
+      access-control-allow-origin:
+      - "*"
+      x-ctxlog-logid:
+      - 1-5fed0a60-573a02655fa8f35c0c1a79ff
+    body:
+      encoding: UTF-8
+      string: '{"status":401,"message":"invalid access token"}
+
+        '
+  recorded_at: Wed, 30 Dec 2020 23:16:48 GMT
+recorded_with: VCR 6.0.0
