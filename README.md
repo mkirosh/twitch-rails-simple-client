@@ -1,8 +1,11 @@
-### Tvtch on Rails
+### Twitch Rails Simple Client
 
 This repository implements a really basic twitch client on Ruby on Rails by using the [Twitch developers API](https://dev.twitch.tv/docs/api).
 The app provides basic Oauth Authentication, channel search and embeded stream and chat.
-For the moment this project does not contain code for UI or Styling.
+
+### Comming soon
+- Styling (SASS)
+- Twitch Notification subscription.
 
 ### Dependencies
 - ruby 2.6.6
